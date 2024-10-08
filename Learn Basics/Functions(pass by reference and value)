@@ -1,0 +1,23 @@
+Your Task:
+You don't need to read input or print anything. Your task is to complete the function passedBy() which takes a and b as input parameters and returns array of two required integers.
+
+// User function Template for Java
+
+class Solution {
+    static int[] passedBy(int a, int b) {
+        // code here
+        int[] ans=new int[2];
+        ans[0]=passbyvalue(a);
+        passbyreference(ans,b);
+        return ans;
+    }
+    public static int passbyvalue(int a)
+    {
+        return a+1;
+    }
+    public static void passbyreference(int arr[],int val)
+    {
+        arr[1]=val+2;
+        
+    }
+}
