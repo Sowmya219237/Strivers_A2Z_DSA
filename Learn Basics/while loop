@@ -1,0 +1,20 @@
+User Task:
+Your task is to complete the provided function and print the table in reverse order (with space between the values).
+
+
+
+//User function Template for Java
+class Geeks {
+	 static void printTable (int n) 
+	 {
+            int multiplier=10;
+            while(multiplier>0)
+            {
+                System.out.print((multiplier*n)+" ");
+                multiplier--;
+                //Your code here
+            }
+       System.out.println();
+	 }
+
+}
