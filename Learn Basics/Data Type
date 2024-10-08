@@ -1,0 +1,26 @@
+Q) Complete the function dataTypeSize() which takes a string as input and returns the size of the data type represented by the given string in byte unit.
+Return -1 if the input data type is invalid.
+
+class Solution {
+    static int dataTypeSize(String str) {
+        // code here
+        if(str.equals("Character")){
+            return Character.SIZE/8;
+        }
+        else if(str.equals("Integer")){
+            return Integer.SIZE/8;
+        }
+        else if(str.equals("Long")){
+            return Long.SIZE/8;
+        }
+        else if(str.equals("Float")){
+            return Float.SIZE/8;
+        }
+        else if(str.equals("Double")){
+            return Double.SIZE/8;
+        }
+        else{
+            return -1;
+        }
+    }
+}
