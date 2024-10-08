@@ -1,0 +1,23 @@
+Given an integer choice denoting the choice of the user and a list containing the single value R or two values L and B depending on the choice.
+If the user's choice is 1, calculate the area of the circle having the given radius(R).  
+Else if the choice is 2, calculate the area of the rectangle with the given length(L) and breadth(B).
+
+// User function Template for Java
+
+class Solution{
+    static double switchCase(int choice, List<Double> arr){
+        // code here
+        double ans=0;
+        switch(choice)
+        {
+            case 1:
+                
+                 ans= Math.PI*arr.get(0)*arr.get(0);
+                break;
+            case 2:
+                 ans= arr.get(0)*arr.get(1);
+                break;
+        }
+        return ans;
+    }
+}
